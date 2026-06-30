@@ -1892,3 +1892,121 @@ a {
         font-size: 2rem;
     }
 }
+
+/* ===== Mobile Devices ===== */
+@media (max-width: 600px) {
+    .container,
+    .nav-container {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 96px 16px 32px;
+    }
+
+    .hero-name {
+        font-size: 1.9rem;
+    }
+
+    .hero-description {
+        font-size: 0.98rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-stats-glass {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 40px;
+    }
+
+    .glass-stat {
+        padding: 20px 12px;
+    }
+
+    .glass-stat-number {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-title {
+        font-size: 1.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+    }
+
+    .about-card {
+        padding: 24px 20px;
+    }
+
+    /* Make wide tables scroll horizontally instead of overflowing */
+    .services-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        font-size: 0.85rem;
+    }
+
+    .services-table thead th,
+    .services-table tbody td {
+        padding: 10px 12px;
+    }
+
+    /* Single-column value tags on small screens */
+    .values-list {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
+    .cohort-divider {
+        flex-direction: column;
+        gap: 12px;
+        margin: 32px auto 24px;
+        padding: 0 16px;
+    }
+
+    .cohort-divider-line {
+        width: 100%;
+        flex: none;
+    }
+
+    .quote-card {
+        padding: 24px 18px 18px 28px;
+    }
+
+    .quote-text {
+        font-size: 0.98rem;
+    }
+
+    .toc-item {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .timeline-image img,
+    .board-image img {
+        max-width: 100%;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+}
