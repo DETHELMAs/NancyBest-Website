@@ -1892,3 +1892,164 @@ a {
         font-size: 2rem;
     }
 }
+
+/* ===== Mobile Devices ===== */
+@media (max-width: 768px) {
+    .container,
+    .nav-container {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 96px 16px 32px;
+    }
+
+    .hero-name {
+        font-size: 1.9rem;
+    }
+
+    .hero-description {
+        font-size: 0.98rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-stats-glass {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 40px;
+    }
+
+    .glass-stat {
+        padding: 20px 12px;
+    }
+
+    .glass-stat-number {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-title {
+        font-size: 1.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+    }
+
+    .about-card {
+        padding: 24px 20px;
+    }
+
+    /* Avoid justified text gaps on narrow screens */
+    .about-card p,
+    .detail-content p {
+        text-align: left;
+    }
+
+    /* Stack table rows as readable cards instead of forcing horizontal scroll */
+    .services-table,
+    .services-table thead,
+    .services-table tbody,
+    .services-table tr,
+    .services-table th,
+    .services-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .services-table thead {
+        display: none;
+    }
+
+    .services-table tbody tr {
+        margin-bottom: 12px;
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        background: var(--bg-white);
+    }
+
+    .services-table tbody tr:last-child {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .services-table tbody tr:hover {
+        background: var(--bg-white);
+    }
+
+    .services-table tbody td {
+        padding: 4px 0;
+        white-space: normal;
+    }
+
+    .services-table tbody td:first-child {
+        width: auto;
+        font-size: 1rem;
+        color: var(--primary);
+    }
+
+    .services-table tbody td:last-child {
+        font-size: 0.9rem;
+    }
+
+    /* Single-column value tags on small screens */
+    .values-list {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
+    .cohort-divider {
+        flex-direction: column;
+        gap: 12px;
+        margin: 32px auto 24px;
+        padding: 0 16px;
+    }
+
+    .cohort-divider-line {
+        width: 100%;
+        flex: none;
+    }
+
+    .cohort-divider-label {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .quote-card {
+        padding: 24px 18px 18px 28px;
+    }
+
+    .quote-text {
+        font-size: 0.98rem;
+    }
+
+    .toc-item {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .timeline-image img,
+    .board-image img {
+        max-width: 100%;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+}
