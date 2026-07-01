@@ -1894,7 +1894,7 @@ a {
 }
 
 /* ===== Mobile Devices ===== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container,
     .nav-container {
         padding: 0 16px;
