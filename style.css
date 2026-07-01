@@ -1952,18 +1952,56 @@ a {
         padding: 24px 20px;
     }
 
-    /* Make wide tables scroll horizontally instead of overflowing */
-    .services-table {
-        display: block;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
-        font-size: 0.85rem;
+    /* Avoid justified text gaps on narrow screens */
+    .about-card p,
+    .detail-content p {
+        text-align: left;
     }
 
-    .services-table thead th,
+    /* Stack table rows as readable cards instead of forcing horizontal scroll */
+    .services-table,
+    .services-table thead,
+    .services-table tbody,
+    .services-table tr,
+    .services-table th,
+    .services-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .services-table thead {
+        display: none;
+    }
+
+    .services-table tbody tr {
+        margin-bottom: 12px;
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        background: var(--bg-white);
+    }
+
+    .services-table tbody tr:last-child {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .services-table tbody tr:hover {
+        background: var(--bg-white);
+    }
+
     .services-table tbody td {
-        padding: 10px 12px;
+        padding: 4px 0;
+        white-space: normal;
+    }
+
+    .services-table tbody td:first-child {
+        width: auto;
+        font-size: 1rem;
+        color: var(--primary);
+    }
+
+    .services-table tbody td:last-child {
+        font-size: 0.9rem;
     }
 
     /* Single-column value tags on small screens */
@@ -1982,6 +2020,11 @@ a {
     .cohort-divider-line {
         width: 100%;
         flex: none;
+    }
+
+    .cohort-divider-label {
+        white-space: normal;
+        text-align: center;
     }
 
     .quote-card {
